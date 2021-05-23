@@ -3,102 +3,296 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Three.js</title>
   </head>
   <body>
 
     <canvas id="bg"></canvas>   
-
-    <main>
-
-      <header>
-        <h1>Hiba Fatima</h1>
-        <p>🚀 Welcome to my website!</p>
-      </header>
-
-
-      <blockquote>
-        <p>I like making stuff and putting it on the internet</p>
-      </blockquote>
-
-      <section>
-        <h2>📜 Manifesto</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-      </section>
-
-      <section class="light">
-        <h2>👩🏽‍🚀 Projects</h2>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <h2>🏆 Accomplishments</h2>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-      </section>
-
-      <blockquote>
-        <p>The best way out is always through <br>-Robert Frost</p>
-      </blockquote>
-
-      <section class="left">
-        <h2>🌮 Work History</h2>
-
-        <h3>McDonalds</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <h3>Burger King</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <h3>Taco Bell</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-      </section>
-
-      <blockquote>
-        <p>Thanks for watching!</p>
-      </blockquote>
-
-
-    </main>
+    <div class="main-section">
+        <header>
+          <nav class="navbar">
+            <p class="nav__logo">Portfolio 2021</p>
+            <ul class="nav__menu">
+              <div class="link-flex">
+              <div class="star" id="star-1"></div>
+              <li class="nav__item nav__item-1">
+                <a href="#about" class="nav__link link-effect nav__link-1">About</a>
+              </li>
+            </div>
+            <div class="link-flex">
+              <div class="star" id="star-2"></div>
+              <li class="nav__item nav__item-2">
+                <a href="#work" class="nav__link link-effect nav__link-2">Work</a>
+              </li>
+            </div>
+            <div class="link-flex">
+              <div class="star" id="star-3"></div>
+              <li class="nav__item nav__item-3">
+                <a href="#contact" class="nav__link link-effect nav__link-3">Contact</a>
+              </li>
+              </div>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <section class="section-landing-page">
+            <div class="carousel-section">
+              <ul id="carousel">
+                <li style="opacity: 1">
+                  <img
+                    class="carousel-img"
+                    src="https://marklchaves.files.wordpress.com/2020/01/bali-pasar-ubud-ibu-duduk-sinar-512w.jpg"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    class="carousel-img"
+                    src="https://marklchaves.files.wordpress.com/2020/01/bhutan-paro-mark-self-portrait-down-bw-512w.jpg"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    class="carousel-img"
+                    src="https://marklchaves.files.wordpress.com/2020/01/arizona-phoenix-art-emily-512w.jpg"
+                    alt=""
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="heading-main">
+              <p class="heading-main__text">
+                <span class="arr-purple">&rarr;</span> I’m Hiba Fatima, a web
+                developer who builds and designs web apps and websites. At the
+                intersection of functionality and aesthetics, lorem ipsum dolor sit
+                iusto eveniet quae aperiam ipsum. Let’s make something great!
+                <a
+                  href=""
+                  class="copy-click"
+                  data-tooltip-text="Click to copy"
+                  data-tooltip-text-copied="✔ Copied to clipboard"
+                  >xyz@gmail.com</a
+                >
+              </p>
+            </div>
+          </section>
     
+          <section class="section-work" id="work">
+            <div class="section-work__heading">
+              <p class="section-work__heading__text anm-moveDown">
+                <span class="arr-purple">&rarr;</span> Selected Work
+              </p>
+            </div>
+            <section class="section-work__content">
+              <div class="project project-p1">
+                <div class="project__img anm-moveRight">img</div>
+                <div class="project__desc">
+                  <div class="project__desc-content">
+                    <p class="project__desc__text-h1">Project Name</p>
+                    <p class="project__desc__text-t1">
+                      Deleniti dolorum fugit expedita maiores ipsam.
+                    </p>
+                  </div>
+                  <div class="project__link">
+                    <a href="#" class="project__link-l1 link-effect">View Demo</a>
+                    <a href="#" class="project__link-l2 link-effect">View Code</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <hr class="anm-hr" />
+            <section class="section-work__content">
+              <div class="project project-p1">
+                <div class="project__img anm-moveLeft">img</div>
+                <div class="project__desc">
+                  <div class="project__desc-content">
+                    <p class="project__desc__text-h1">Project Name</p>
+                    <p class="project__desc__text-t1">
+                      Deleniti dolorum fugit expedita maiores ipsam.
+                    </p>
+                  </div>
+                  <div class="project__link">
+                    <a href="#" class="project__link-l1 link-effect">View Demo</a>
+                    <a href="#" class="project__link-l2 link-effect">View Code</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+    
+          <section class="section-about" id="about">
+            <div class="section-about__heading">
+              <p class="section-about__heading__text anm-moveDown">
+                <span class="arr-purple">&rarr;</span> About Me
+              </p>
+            </div>
+            <div class="section-about__content">
+              <div class="section-about__content__text">
+                <div class="section-about__content__text-1 anm-moveDown">
+                  I'm a web developer at Deloitte USI. In my spare time, I'm working
+                  on side projects to learn more and delve deeper into the world of
+                  full-stack web development. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Proin sed libero enim sed faucibus.
+                  Nec ultrices dui sapien eget mi proin sed libero enim. Aenean sed
+                  adipiscing diam donec adipiscing tristique risus nec feugiat.
+                </div>
+                <div class="section-about__content__text-2 anm-moveDown">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+                  illum ex neque consequuntur repudiandae culpa, magnam eius
+                  repellat dolore minus soluta, ipsum nesciunt non quaerat tempore
+                  modi suscipit hic amet?
+                </div>
+                <div class="section-about__content__text-3 anm-moveDown">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
+                  eveniet saepe, velit fugiat quis repellendus et rem. At neque
+                  maxime velit quia, dolorem alias aliquid maiores tenetur sunt
+                  nihil recusandae.
+                </div>
+              </div>
+              <div class="section-about__img">img</div>
+            </div>
+          </section>
+    
+          <section class="section-contact" id="contact">
+            <div class="section-contact__content">
+              <p><span class="arr-purple">&rarr;</span> Get In Touch</p>
+              <p>
+                Drop me a line:
+                <a
+                  href=""
+                  class="copy-click"
+                  data-tooltip-text="Click to copy"
+                  data-tooltip-text-copied="✔ Copied to clipboard"
+                  >xyz@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="section-contact__social">
+              <p><a href="#" class="link-effect">LinkedIn</a></p>
+              <p><a href="#" class="link-effect">Github</a></p>
+            </div>
+          </section>
+        </main>
+        <div class="cursor"></div>  
+      </div>
     <script type="module" src="/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+        $(".nav__link-1").hover(
+          function () {
+            $("#star-1").addClass("star-hover");
+          },
+          function () {
+            $("#star-1").removeClass("star-hover");
+          }
+        );
+        $(".nav__link-2").hover(
+          function () {
+            $("#star-2").addClass("star-hover");
+          },
+          function () {
+            $("#star-2").removeClass("star-hover");
+          }
+        );
+        $(".nav__link-3").hover(
+          function () {
+            $("#star-3").addClass("star-hover");
+          },
+          function () {
+            $("#star-3").removeClass("star-hover");
+          }
+        );
+        $(window).scroll(function () {
+          var wScroll = $(this).scrollTop();
+  
+          $(".parallax-1").css({
+            transform: "translateY(-" + wScroll / 23 + "%)",
+          });
+          $(".parallax-2").css({
+            transform: "translateX(" + wScroll / 23 + "%)",
+          });
+          $(".anm-moveDown").each(function (i) {
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_object) {
+              $(this).css({
+                animation: "moveFromDown 1s .4s",
+                opacity: "1",
+                "backface-visibility": "hidden",
+                "animation-fill-mode": "backwards",
+              });
+            }
+          });
+          $(".anm-hr").each(function (i) {
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_object) {
+              $(this).css({
+                animation: "lineGrow 1s .4s",
+                opacity: "1",
+                "backface-visibility": "hidden",
+                "animation-fill-mode": "backwards",
+              });
+            }
+          });
+          $(".anm-moveLeft").each(function (i) {
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_object) {
+              $(this).css({
+                animation: "moveInLeftZoom 1.5s",
+                opacity: "1",
+                "backface-visibility": "hidden",
+                "animation-fill-mode": "backwards",
+              });
+            }
+          });
+          $(".anm-moveRight").each(function (i) {
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_object) {
+              $(this).css({
+                animation: "moveInRightZoom 1.5s",
+                opacity: "1",
+                "backface-visibility": "hidden",
+                "animation-fill-mode": "backwards",
+              });
+            }
+          });
+        });
+      });
+      $(window).on("beforeunload", function () {
+        $(window).scrollTop(0);
+      });
+    </script>
   </body>
 </html>
